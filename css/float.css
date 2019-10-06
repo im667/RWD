@@ -44,13 +44,6 @@
 }
 /*mobile Device*/
 @media screen and (max-width:1000px){
-  .main{
-    overflow: hidden;
-  }
-.main > *{
-  width:15%;
-  float: left;
-}
 .favorite,.twitter{
   width: 50%;
   float: left;
@@ -70,7 +63,7 @@
   .book, .board, .twitter{
     margin-right:20px;
   }
-  .book, .borad{
+  .book, .board{
     width:320px;
   }
   .news{
@@ -78,6 +71,7 @@
   }
   .favorite{
     width:240px;
+    float:right;
   }
   .twitter{
     width:400px;
