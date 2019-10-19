@@ -39,6 +39,53 @@ legend, .a11y-hidden{
   clip: rect(0,0,0,0);
   clip-path: polygon(0 0, 0 0, 0 0);
 }
+/*공통 스타일 모듈*/
+.responsive{
+  max-width:100%;
+  height:auto;
+}
+.en-block{
+  display: block;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.ir{
+  background:yellow url(./images/sprite_main.png) no-repeat;
+  padding-left:65px;
+  min-height: 60px;
+}
+.ir-book{
+  background-position: 0 0;
+}
+.ir-news{
+  background-position: 0 -230px;
+}
+.ir-board{
+  background-position: 0 -115px;
+}
+.ir-favorite{
+  background-position: 0 -345px;
+}
+.ir-twitter{
+  background-position: 0 0;
+}
+.point-color-green{
+  color:#abd375;
+}
+.point-color-yellow{
+  color:#e8ca58;
+}
+.point-color-yellow{
+  color:brown;
+}
+.point-color-yellow{
+  color:skyblue;
+}
+.point-color-yellow{
+  color:#eee60a;
+}
+
+
 /* All Device */
 .container{
   display: flex;
@@ -99,10 +146,9 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
 
 
 
-}
+/*공통메인*/
+
 .main{
-  background-color: skyblue;
-  height: 60vh;
   display: flex;
   flex-flow: row wrap;
 }
@@ -112,17 +158,18 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
 .book{
   background-color: blueviolet;
 }
-.news{
-  background-color: orangered;
+.main [class*="-heading"]{
+  font-weight:700;
+  font-size:1.8rem;
 }
-.board{
-  background-color: teal;
+/*공통 추천서적*/
+.book-cover{
+  text-align:center;
 }
-.favorite{
-  background-color: goldenrod;
-}
-.twitter{
-  background-color: aqua;
+/*공통 새소식*/
+/*공통 게시판*/
+/*공통 인기사이드*/
+/* 공통 트위터*/
 }
 .footer{
   background-color: purple;
@@ -228,20 +275,24 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
     transform: translateY(-50%) rotate(-45deg);
   }
   .menu{
-    color:#fff;
-    background-color:rgba(0,0,0,0.85);
-    margin:0;
+    overflow:hidden;
+    width: 0;
+    transform:translateX(-100%);
+    transition:all 0.2s;
+    color:transparent;
+    list-style:none;
     position:fixed;
     top:0;
     left:0;
-    width:80%;
-    height:100vh;
-    padding:2em 1em;
-    list-style:none;
-    transform:translateX(-100%);
-    transition:all 0.2s;
   }
   .nav-act .menu{
+    padding:2em 1em;
+    color:#fff;
+    background-color:rgba(0,0,0,0.85);
+    margin:0;
+    height:100vh;
+    width:80%;
+    padding:0;
     transform: none;
   }
   .menu-list{
