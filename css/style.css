@@ -192,7 +192,7 @@ input[type="search"]:focus:-moz-placeholder { /* Firefox 18- */
 }
 /* 공통 새소식 */
 .news-date{
-  width:33;
+  text-align: block;
   display:block;
   
 }
