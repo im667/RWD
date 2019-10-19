@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="ko-KR">
 <head>
@@ -29,11 +28,9 @@
           <button type="submit" class="btn-search">검색</button>
         </fieldset>
       </form>
-
-
     </header>
     <nav class="navigation">
-      <h2 class="a11y-hidden">메인메뉴</h2>
+      <h2 class="a11y-hidden">메인 메뉴</h2>
       <button class="btn-menubar" aria-label="메뉴 열기">
         <span class="menubar menubar-top"></span>
         <span class="menubar menubar-middle"></span>
@@ -84,7 +81,7 @@
     </nav>
     <main class="main">
       <section class="book">
-        <h2 class="book-heading ir-book">
+        <h2 class="book-heading ir">
           추천 서적
           <span class="en-block point-color-green">
             Recommend Book
@@ -101,11 +98,11 @@
             반응형웹 핵심 가이드북 도서
           </figcaption>
         </figure>
-        <dl class="recommend-book-detail">
+        <dl class="book-detail">
           <dt>저자</dt>
           <dd>김데레사</dd>
           <dt class="a11y-hidden">평점</dt>
-          <dd class="recommend-book-grade" aria-label="5점 만점에 4점">
+          <dd class="point-color-green" aria-label="5점 만점에 4점">
             <span aria-hidden="true">★★★★☆</span>
           </dd>
         </dl>
@@ -116,11 +113,11 @@
         </p>
       </section>
       <section class="news">
-        <h2 class="news-heading ir-news">
+        <h2 class="news-heading ir ir-news">
           새소식 <span class="en-block point-color-yellow">WebCafe News</span>
         </h2>
-        <figure class="news-vidoe-container">
-          <!-- <video class="news-video rwd-img" poster="media/poster.jpg" controls>
+        <!-- <figure class="news-video-container">
+          <video class="news-video responsive" poster="media/poster.jpg" controls>
             <source src="media/stories.mp4" type="video/mp4" />
             <track
               src="media/stories-en.vtt"
@@ -129,7 +126,7 @@
               label="English Caption"
             />
           </video> -->
-          <div class="iframe-container">
+          <div class="iframe-container video-16-9">
             <iframe
               class="iframe-video"
               src="https://www.youtube.com/embed/0Jw7OBkkfzo"
@@ -156,5 +153,6 @@
     </main>
     <footer class="footer">푸터</footer>
   </div>
+  
 </body>
 </html>
