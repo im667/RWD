@@ -225,8 +225,46 @@ position: relative;
   top:1em;
   right:0;
 }
-/* 공통 인기 사이트 */
-
+/* 공통 인기 사이트*/
+.favorite-list{
+  list-style-type: none;
+  counter-reset: 0;
+}
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 1em;
+  padding-left: 1.5em;
+}
+.favorite-list li::before{
+  content: counter(number);
+  background: #eea60a;
+  color:#fff;
+  padding:0 0.5em;
+  border-radius: 50%;
+  margin-right:0.5em;
+}
+/*.favorite-list li:nth-child(1)::before{
+  content:"1";
+}
+.favorite-list li:nth-child(2)::before{
+  content:"2";
+}
+.favorite-list li:nth-child(3)::before{
+  content:"3";
+}
+.favorite-list li:nth-child(4)::before{
+  content:"4";
+}
+.favorite-list li:nth-child(1)::before,
+.favorite-list li:nth-child(2)::before,
+.favorite-list li:nth-child(3)::before,
+.favorite-list li:nth-child(4)::before{
+  background: #eea60a;
+  color:#fff;
+  padding:0 0.5em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+} */
 /* 공통 트위터 */
 
 

@@ -116,8 +116,8 @@
         <h2 class="news-heading ir ir-news">
           새소식 <span class="en-block point-color-yellow">WebCafe News</span>
         </h2>
-        <!-- <figure class="news-video-container">
-          <video class="news-video responsive" poster="media/poster.jpg" controls>
+        <figure class="news-video-container">
+          <!-- <video class="news-video responsive" poster="media/poster.jpg" controls>
             <source src="media/stories.mp4" type="video/mp4" />
             <track
               src="media/stories-en.vtt"
@@ -147,7 +147,6 @@
           2019.10.19
         </time>
       </section>
-      
       <section class="board">
         <h2 class="board-heading ir ir-board">
           <span id="board">게시판</span>
@@ -178,10 +177,20 @@
           </li>
         </ul>
         <a href="#" class="board-more" aria-labelledby="board" title="게시판으로 이동"
-          ><span class="icon-plus point-color-brown aria-hidden="true"></span>더보기</a
+          ><span class="icon-plus point-color-brown" aria-hidden="true"></span>더보기</a
         >
       </section>
-      <section class="favorite">인기사이트</section>
+      <section class="favorite">
+        <h2 class="favorite-heading ir ir-favorite">
+          인기 사이트<span class="en-block point-color-orange">Favorite Site</span>
+        </h2>
+        <ol class="favorite-list">
+          <li><a href="http://ko.learnlayout.com/" target="_blank" title="새창으로 열립니다.">Learn CSS Layout<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://flexboxfroggy.com/#ko" target="_blank" title="새창으로 열립니다.">Flexbox Froggy<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="http://cssgridgarden.com/#ko" target="_blank" title="새창으로 열립니다.">CSS Grid Garden<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+          <li><a href="https://developer.mozilla.org/ko/" target="_blank" title="새창으로 열립니다.">MDN Web Docs<span class="icon-link-ext" aria-hidden="true"></span></a></li>
+        </ol>
+      </section>
       <article class="twitter">트위터</article>
     </main>
     <footer class="footer">푸터</footer>
